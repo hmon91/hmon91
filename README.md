@@ -36,7 +36,7 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 
 ### Featured Project
 
-#### [Positive_NN](https://github.com/hmon91/Positive_NN)
+#### [Positive Neural Networks](https://github.com/hmon91/Positive_NN)
 
 Code for *Ensuring Both Positivity and Stability Using Sector-Bounded Nonlinearity for Systems with Neural Network Controllers* (IEEE L-CSS, 2024). A closed-form sector bound and a Metzler/Hurwitz test certify a neural-network controller in microseconds, with an IQC baseline included for comparison. &nbsp;`MATLAB` · `Python`
 
