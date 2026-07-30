@@ -48,7 +48,7 @@ Code for *Ensuring Both Positivity and Stability Using Sector-Bounded Nonlineari
 | :--: | :---- | :---- |
 | 2024 | Ensuring Both Positivity and Stability Using Sector-Bounded Nonlinearity for Systems with Neural Network Controllers &nbsp;—&nbsp; [arXiv](https://arxiv.org/abs/2406.12744) · [code](https://github.com/hmon91/Positive_NN) | IEEE L-CSS |
 
-<sub>Full, up-to-date list on my <a href="YOUR_SCHOLAR_URL">Google Scholar</a>.</sub>
+<sub>Full, up-to-date list on my <a href="https://scholar.google.com/citations?user=5k1HFTkAAAAJ&hl=en">Google Scholar</a>.</sub>
 
 ---
 
