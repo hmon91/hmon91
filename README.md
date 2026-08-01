@@ -64,11 +64,9 @@ Always glad to talk about safe learning-based control, positive systems, or pote
   *American Control Conference (ACC)*, pp. 4402–4408, 2024
   [code](https://github.com/hmon91/PSGModel)
 
-**Preprints**
-
 - **Delay-Independent Safe Control with Neural Networks: Positive Lur'e Certificates for Risk-Aware Autonomy**
   H. Montazeri Hedesh, M. Siami
-  Submitted to *American Control Conference (ACC)*, New Orleans, 2026
+  Accepted to *American Control Conference (ACC)*, New Orleans, 2026
   [arXiv:2510.06661](https://arxiv.org/abs/2510.06661) · [code](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)
 
 <sub>Full, up-to-date list on my <a href="https://scholar.google.com/citations?user=5k1HFTkAAAAJ&hl=en">Google Scholar</a>.</sub>
