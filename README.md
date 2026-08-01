@@ -31,7 +31,7 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 - **Certified neural-network control** — stability and safety guarantees for NN-in-the-loop systems
 - **Positive systems** — Metzler / Hurwitz conditions and positive Aizerman-type results
 - **Absolute stability** — sector-bounded nonlinearities, integral quadratic constraints, Lyapunov certificates
-- **Reachability and verification** — set propagation and region-of-attraction estimation for learned controllers
+- **Region of attraction and verification** — local sector bounds via layer-wise linear relaxation
 - **Robustness under delay and uncertainty** — delay-independent certificates, interval matrices, stability radius
 - **Learning-based control** — imitating optimal or expert controllers while preserving guarantees
 
@@ -44,19 +44,20 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 - **Ensuring Both Positivity and Stability Using Sector-Bounded Nonlinearity for Systems with Neural Network Controllers**
   H. Montazeri Hedesh, M. Siami
   *IEEE Control Systems Letters (L-CSS)*, vol. 8, pp. 1685–1690, 2024
-  [arXiv:2406.12744](https://arxiv.org/abs/2406.12744) · [IEEE Xplore](https://ieeexplore.ieee.org/document/10561541) · [code](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)
+  [IEEE Xplore](https://ieeexplore.ieee.org/document/10561541) · [arXiv:2406.12744](https://arxiv.org/abs/2406.12744) · [code](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)
 
 **Conference**
 
 - **Local Stability and Region of Attraction Analysis for Neural Network Feedback Systems under Positivity Constraints**
   H. Montazeri Hedesh, M. K. Wafi, M. Siami
-  *64th IEEE Conference on Decision and Control (CDC)*, Rio de Janeiro, 2025
-  [arXiv:2505.22889](https://arxiv.org/abs/2505.22889) · [code](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)
+  *64th IEEE Conference on Decision and Control (CDC)*, Rio de Janeiro, Brazil, 2025
+  [IEEE Xplore](https://ieeexplore.ieee.org/document/11312171) · [arXiv:2505.22889](https://arxiv.org/abs/2505.22889) · [code](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)
+  <!-- TODO: add page range once you have it from Xplore -->
 
 - **Robust Stability Analysis of Positive Lur'e System with Neural Network Feedback**
   H. Montazeri Hedesh, M. K. Wafi, B. Shafai, M. Siami
-  *IEEE Conference on Control Technology and Applications (CCTA)*, 2025
-  [arXiv:2505.18912](https://arxiv.org/abs/2505.18912)
+  *IEEE Conference on Control Technology and Applications (CCTA)*, San Diego, CA, pp. 976–981, 2025
+  [IEEE Xplore](https://ieeexplore.ieee.org/document/11151493) · [arXiv:2505.18912](https://arxiv.org/abs/2505.18912) · [code](https://github.com/hmon91/Robustness-of-NN-controlled-systems)
 
 - **Predator-Swarm-Guide Dynamics: A Hybrid Approach to Crowd Modeling and Guidance in Mass Shooting Scenarios**
   A. Darabi, H. Montazeri Hedesh, M. Siami, M. Sznaier
@@ -76,15 +77,15 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 
 ### Research Code
 
-The repositories below trace one research program, from global stability outward to local, reachable, and delay-robust settings.
+Each repository reproduces the figures and tables of its paper. The set traces one
+research program: from global stability outward to local, robust, and delay-tolerant settings.
 
-| Repository | What it does | Stack |
+| Repository | Paper | Stack |
 | :--- | :--- | :--- |
-| **[Global stability of NN-controlled systems](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)** | Closed-form sector bound + Metzler/Hurwitz test certifying global exponential stability of an LTI plant under an FFNN controller, with an IQC baseline for run-time comparison. *(L-CSS 2024)* | `MATLAB` `Python` |
-| **[Local stability of NN-controlled systems](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)** | Localized Aizerman conditions plus layer-wise linear relaxations for region-of-attraction estimation. *(CDC 2025)* | `Jupyter` |
-| **[Delay-independent safety of NN controllers](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)** | Safety certificates holding across state/input delays and interval-matrix uncertainty. *(ACC 2026, submitted)* | `MATLAB` |
-| **[Reachability of NN feedback loops](https://github.com/hmon91/Reachability-of-NN-feedback-loops)** | Reachable-set propagation through plant–network loops. | `Jupyter` |
-| **[Neural network verification](https://github.com/hmon91/neural-network-verification)** | Verification experiments and tooling for learned controllers. | `Jupyter` |
+| **[Global stability of NN-controlled systems](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)** | Closed-form sector bound + Metzler/Hurwitz test for global exponential stability, with an IQC run-time baseline. *(L-CSS 2024)* | `MATLAB` `Python` |
+| **[Local stability of NN-controlled systems](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)** | Localized Aizerman conditions and layer-wise linear relaxations for region-of-attraction estimation. *(CDC 2025)* | `Jupyter` |
+| **[Robustness of NN-controlled systems](https://github.com/hmon91/Robustness-of-NN-controlled-systems)** | Closed-form stability radius for positive Lur'e systems under structured uncertainty, plus sector-bound refinement. *(CCTA 2025)* | `MATLAB` |
+| **[Delay-independent safety of NN controllers](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)** | Certificates holding across state/input delays and interval-matrix uncertainty. *(ACC 2026, submitted)* | `MATLAB` |
 | **[PSGModel](https://github.com/hmon91/PSGModel)** | Predator–Swarm–Guide dynamics for crowd modeling and guidance. *(ACC 2024)* | `MATLAB` |
 
 ---
