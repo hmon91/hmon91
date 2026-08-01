@@ -45,10 +45,10 @@ The repositories below trace one research program, from global stability outward
 | :--- | :--- | :--- |
 | **[Global stability of NN-controlled systems](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)** | Closed-form sector bound + Metzler/Hurwitz test certifying global exponential stability of an LTI plant under an FFNN controller. Includes an IQC baseline for run-time comparison. Code for the L-CSS 2024 paper. | `MATLAB` `Python` |
 | **[Local stability of NN-controlled systems](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)** | Local stability and region-of-attraction analysis for neural feedback loops. | `Jupyter` |
-| **[Reachability of NN feedback loops](https://github.com/hmon91/Reachability-of-NN-feedback-loops)** | Reachable-set propagation through plant–network loops. | `Jupyter` |
-| **[Neural network verification](https://github.com/hmon91/neural-network-verification)** | Verification experiments and tooling for learned controllers. | `Jupyter` |
 | **[Delay-independent safety of NN controllers](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)** | Safety certificates that hold irrespective of feedback delay. | `MATLAB` |
 | **[PSGModel](https://github.com/hmon91/PSGModel)** | Predator–Swarm–Guide dynamics for crowd modeling and guidance (Siami Lab collaboration). | `MATLAB` |
+| **[Reachability of NN feedback loops](https://github.com/hmon91/Reachability-of-NN-feedback-loops)** | Reachable-set propagation through plant–network loops. | `Jupyter` |
+| **[Neural network verification](https://github.com/hmon91/neural-network-verification)** | Verification experiments and tooling for learned controllers. | `Jupyter` |
 
 ---
 
