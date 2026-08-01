@@ -20,7 +20,7 @@ Northeastern University · Siami Lab
 
 I'm a PhD student in Electrical and Computer Engineering at [Northeastern University](https://www.northeastern.edu/), advised by **Prof. Milad Siami**. My research builds **provable stability and safety certificates for systems controlled by neural networks** — combining positive-systems theory, absolute stability, and sector-bounded analysis so that learned controllers come with formal guarantees rather than empirical hope.
 
-The recurring theme is **cheap certificates**: replacing semidefinite-programming-based analysis of neural feedback loops with elementwise sector bounds plus Metzler/Hurwitz conditions, which turns a solver call into a matrix test that runs in microseconds and is independent of network depth.
+The recurring theme is **cheap certificates**: replacing semidefinite-programming analysis of neural feedback loops with elementwise sector bounds plus Metzler/Hurwitz conditions. This turns a solver call into a matrix test that runs orders of magnitude faster than SDP-based IQC methods — and certifies regimes those methods cannot reach.
 
 Always glad to talk about safe learning-based control, positive systems, or potential collaborations.
 
@@ -31,9 +31,46 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 - **Certified neural-network control** — stability and safety guarantees for NN-in-the-loop systems
 - **Positive systems** — Metzler / Hurwitz conditions and positive Aizerman-type results
 - **Absolute stability** — sector-bounded nonlinearities, integral quadratic constraints, Lyapunov certificates
-- **Reachability and verification** — set propagation and region-of-attraction analysis for learned controllers
-- **Robustness under delay and uncertainty** — delay-independent safety, interval uncertainty, stability radius
+- **Reachability and verification** — set propagation and region-of-attraction estimation for learned controllers
+- **Robustness under delay and uncertainty** — delay-independent certificates, interval matrices, stability radius
 - **Learning-based control** — imitating optimal or expert controllers while preserving guarantees
+
+---
+
+### Publications
+
+**Journal**
+
+- **Ensuring Both Positivity and Stability Using Sector-Bounded Nonlinearity for Systems with Neural Network Controllers**
+  H. Montazeri Hedesh, M. Siami
+  *IEEE Control Systems Letters (L-CSS)*, vol. 8, pp. 1685–1690, 2024
+  [arXiv:2406.12744](https://arxiv.org/abs/2406.12744) · [IEEE Xplore](https://ieeexplore.ieee.org/document/10561541) · [code](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)
+
+**Conference**
+
+- **Local Stability and Region of Attraction Analysis for Neural Network Feedback Systems under Positivity Constraints**
+  H. Montazeri Hedesh, M. K. Wafi, M. Siami
+  *64th IEEE Conference on Decision and Control (CDC)*, Rio de Janeiro, 2025
+  [arXiv:2505.22889](https://arxiv.org/abs/2505.22889) · [code](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)
+
+- **Robust Stability Analysis of Positive Lur'e System with Neural Network Feedback**
+  H. Montazeri Hedesh, M. K. Wafi, B. Shafai, M. Siami
+  *IEEE Conference on Control Technology and Applications (CCTA)*, 2025
+  [arXiv:2505.18912](https://arxiv.org/abs/2505.18912)
+
+- **Predator-Swarm-Guide Dynamics: A Hybrid Approach to Crowd Modeling and Guidance in Mass Shooting Scenarios**
+  A. Darabi, H. Montazeri Hedesh, M. Siami, M. Sznaier
+  *American Control Conference (ACC)*, pp. 4402–4408, 2024
+  [code](https://github.com/hmon91/PSGModel)
+
+**Preprints**
+
+- **Delay-Independent Safe Control with Neural Networks: Positive Lur'e Certificates for Risk-Aware Autonomy**
+  H. Montazeri Hedesh, M. Siami
+  Submitted to *American Control Conference (ACC)*, New Orleans, 2026
+  [arXiv:2510.06661](https://arxiv.org/abs/2510.06661) · [code](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)
+
+<sub>Full, up-to-date list on my <a href="https://scholar.google.com/citations?user=5k1HFTkAAAAJ&hl=en">Google Scholar</a>.</sub>
 
 ---
 
@@ -43,31 +80,12 @@ The repositories below trace one research program, from global stability outward
 
 | Repository | What it does | Stack |
 | :--- | :--- | :--- |
-| **[Global stability of NN-controlled systems](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)** | Closed-form sector bound + Metzler/Hurwitz test certifying global exponential stability of an LTI plant under an FFNN controller. Includes an IQC baseline for run-time comparison. Code for the L-CSS 2024 paper. | `MATLAB` `Python` |
-| **[Local stability of NN-controlled systems](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)** | Local stability and region-of-attraction analysis for neural feedback loops. | `Jupyter` |
-| **[Delay-independent safety of NN controllers](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)** | Safety certificates that hold irrespective of feedback delay. | `MATLAB` |
-| **[PSGModel](https://github.com/hmon91/PSGModel)** | Predator–Swarm–Guide dynamics for crowd modeling and guidance (Siami Lab collaboration). | `MATLAB` |
+| **[Global stability of NN-controlled systems](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)** | Closed-form sector bound + Metzler/Hurwitz test certifying global exponential stability of an LTI plant under an FFNN controller, with an IQC baseline for run-time comparison. *(L-CSS 2024)* | `MATLAB` `Python` |
+| **[Local stability of NN-controlled systems](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)** | Localized Aizerman conditions plus layer-wise linear relaxations for region-of-attraction estimation. *(CDC 2025)* | `Jupyter` |
+| **[Delay-independent safety of NN controllers](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)** | Safety certificates holding across state/input delays and interval-matrix uncertainty. *(ACC 2026, submitted)* | `MATLAB` |
 | **[Reachability of NN feedback loops](https://github.com/hmon91/Reachability-of-NN-feedback-loops)** | Reachable-set propagation through plant–network loops. | `Jupyter` |
 | **[Neural network verification](https://github.com/hmon91/neural-network-verification)** | Verification experiments and tooling for learned controllers. | `Jupyter` |
-
----
-
-### Selected Publications
-
-| Year | Paper | Venue |
-| :--: | :---- | :---- |
-| 2024 | Ensuring Both Positivity and Stability Using Sector-Bounded Nonlinearity for Systems with Neural Network Controllers &nbsp;—&nbsp; [arXiv](https://arxiv.org/abs/2406.12744) · [IEEE Xplore](https://ieeexplore.ieee.org/document/10561541) · [code](https://github.com/hmon91/Global-stability-of-NN-controlled-systems) | IEEE L-CSS, vol. 8, pp. 1685–1690 |
-
-<sub>Full, up-to-date list on my <a href="https://scholar.google.com/citations?user=5k1HFTkAAAAJ&hl=en">Google Scholar</a>.</sub>
-
-<!-- ─────────────────────────────────────────────────────────────
-     OPTIONAL — delete this block or fill it in.
-     Add in-progress work only at whatever status you're
-     comfortable stating publicly:
-
-| — | Taming Neural Feedback Loops &nbsp;—&nbsp; [arXiv](#) | Under review, IEEE TAC |
-| — | Safe reinforcement learning via an Intrinsically Metzler Canonical Form | In preparation |
-     ───────────────────────────────────────────────────────────── -->
+| **[PSGModel](https://github.com/hmon91/PSGModel)** | Predator–Swarm–Guide dynamics for crowd modeling and guidance. *(ACC 2024)* | `MATLAB` |
 
 ---
 
