@@ -62,6 +62,7 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 - **Predator-Swarm-Guide Dynamics: A Hybrid Approach to Crowd Modeling and Guidance in Mass Shooting Scenarios**
   A. Darabi, H. Montazeri Hedesh, M. Siami, M. Sznaier
   *American Control Conference (ACC)*, pp. 4402–4408, 2024
+  [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10645036) 
   [code](https://github.com/hmon91/PSGModel)
 
 - **Delay-Independent Safe Control with Neural Networks: Positive Lur'e Certificates for Risk-Aware Autonomy**
