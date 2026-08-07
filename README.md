@@ -89,7 +89,7 @@ research program: from global stability outward to local, robust, and delay-tole
 
 ---
 
-### Coursework
+### Project
 
 Earlier course projects, kept for the implementation rather than the novelty:
 classical control written out from the formulae instead of assembled from toolbox calls.
