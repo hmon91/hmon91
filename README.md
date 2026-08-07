@@ -62,6 +62,7 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 - **Predator-Swarm-Guide Dynamics: A Hybrid Approach to Crowd Modeling and Guidance in Mass Shooting Scenarios**
   A. Darabi, H. Montazeri Hedesh, M. Siami, M. Sznaier
   *American Control Conference (ACC)*, pp. 4402–4408, 2024
+  [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10645036) 
   [code](https://github.com/hmon91/PSGModel)
 
 - **Delay-Independent Safe Control with Neural Networks: Positive Lur'e Certificates for Risk-Aware Autonomy**
@@ -85,6 +86,17 @@ research program: from global stability outward to local, robust, and delay-tole
 | **[Robustness of NN-controlled systems](https://github.com/hmon91/Robustness-of-NN-controlled-systems)** | Closed-form stability radius for positive Lur'e systems under structured uncertainty, plus sector-bound refinement. *(CCTA 2025)* | `MATLAB` |
 | **[Delay-independent safety of NN controllers](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)** | Certificates holding across state/input delays and interval-matrix uncertainty. *(ACC 2026, submitted)* | `MATLAB` |
 | **[PSGModel](https://github.com/hmon91/PSGModel)** | Predator–Swarm–Guide dynamics for crowd modeling and guidance. *(ACC 2024)* | `MATLAB` |
+
+---
+
+### Coursework
+
+Earlier course projects, kept for the implementation rather than the novelty:
+classical control written out from the formulae instead of assembled from toolbox calls.
+
+| Repository | Description | Stack |
+| :--- | :--- | :--- |
+| **[Rocket state-space control](https://github.com/hmon91/rocket-state-space-control)** | Full state-space study of a sounding rocket in first-stage ascent: trajectory linearisation, controllability and observability, Lyapunov and BIBO stability, pole placement, static and integral tracking, full and reduced-order observers. Runs with no Control System Toolbox, so Bass-Gura, Ackermann and the Kronecker Lyapunov solve are all written directly. *(Sharif University of Technology, Advanced Automatic Control)* | `MATLAB` |
 
 ---
 
