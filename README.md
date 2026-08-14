@@ -48,27 +48,27 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 
 **Conference**
 
-- **Local Stability and Region of Attraction Analysis for Neural Network Feedback Systems under Positivity Constraints**
-  H. Montazeri Hedesh, M. K. Wafi, M. Siami
-  *64th IEEE Conference on Decision and Control (CDC)*, Rio de Janeiro, Brazil, 2025
-  [IEEE Xplore](https://ieeexplore.ieee.org/document/11312171) · [arXiv:2505.22889](https://arxiv.org/abs/2505.22889) · [code](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)
-  <!-- TODO: add page range once you have it from Xplore -->
+- **Delay-Independent Safe Control with Neural Networks: Positive Lur'e Certificates for Risk-Aware Autonomy**
+  H. Montazeri Hedesh, M. Siami
+  Accepted to *American Control Conference (ACC)*, New Orleans, 2026
+  [IEEE Xplore](https://ieeexplore.ieee.org/document/11616300) · [arXiv:2510.06661](https://arxiv.org/abs/2510.06661) · [code](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)
 
 - **Robust Stability Analysis of Positive Lur'e System with Neural Network Feedback**
   H. Montazeri Hedesh, M. K. Wafi, B. Shafai, M. Siami
   *IEEE Conference on Control Technology and Applications (CCTA)*, San Diego, CA, pp. 976–981, 2025
   [IEEE Xplore](https://ieeexplore.ieee.org/document/11151493) · [arXiv:2505.18912](https://arxiv.org/abs/2505.18912) · [code](https://github.com/hmon91/Robustness-of-NN-controlled-systems)
 
+- **Local Stability and Region of Attraction Analysis for Neural Network Feedback Systems under Positivity Constraints**
+  H. Montazeri Hedesh, M. K. Wafi, M. Siami
+  *64th IEEE Conference on Decision and Control (CDC)*, Rio de Janeiro, Brazil, 2025
+  [IEEE Xplore](https://ieeexplore.ieee.org/document/11312171) · [arXiv:2505.22889](https://arxiv.org/abs/2505.22889) · [code](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)
+  <!-- TODO: add page range once you have it from Xplore -->
+
 - **Predator-Swarm-Guide Dynamics: A Hybrid Approach to Crowd Modeling and Guidance in Mass Shooting Scenarios**
   A. Darabi, H. Montazeri Hedesh, M. Siami, M. Sznaier
   *American Control Conference (ACC)*, pp. 4402–4408, 2024
   [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10645036) 
   [code](https://github.com/hmon91/PSGModel)
-
-- **Delay-Independent Safe Control with Neural Networks: Positive Lur'e Certificates for Risk-Aware Autonomy**
-  H. Montazeri Hedesh, M. Siami
-  Accepted to *American Control Conference (ACC)*, New Orleans, 2026
-  [IEEE Xplore](https://ieeexplore.ieee.org/document/11616300) · [arXiv:2510.06661](https://arxiv.org/abs/2510.06661) · [code](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)
 
 <sub>Full, up-to-date list on my <a href="https://scholar.google.com/citations?user=5k1HFTkAAAAJ&hl=en">Google Scholar</a>.</sub>
 
