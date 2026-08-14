@@ -50,7 +50,7 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 
 - **Delay-Independent Safe Control with Neural Networks: Positive Lur'e Certificates for Risk-Aware Autonomy**
   H. Montazeri Hedesh, M. Siami
-  Accepted to *American Control Conference (ACC)*, New Orleans, 2026
+  *American Control Conference (ACC)*, New Orleans, LA, USA, 2026, pp. 134-141
   [IEEE Xplore](https://ieeexplore.ieee.org/document/11616300) · [arXiv:2510.06661](https://arxiv.org/abs/2510.06661) · [code](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)
 
 - **Robust Stability Analysis of Positive Lur'e System with Neural Network Feedback**
@@ -66,7 +66,7 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 
 - **Predator-Swarm-Guide Dynamics: A Hybrid Approach to Crowd Modeling and Guidance in Mass Shooting Scenarios**
   A. Darabi, H. Montazeri Hedesh, M. Siami, M. Sznaier
-  *American Control Conference (ACC)*, pp. 4402–4408, 2024
+  *American Control Conference (ACC)*, Toronto, ON, Canada, 2024, pp. 4402–4408
   [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10645036) 
   [code](https://github.com/hmon91/PSGModel)
 
