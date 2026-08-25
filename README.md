@@ -89,17 +89,6 @@ research program: from global stability outward to local, robust, and delay-tole
 
 ---
 
-### Project
-
-Earlier course projects, kept for the implementation rather than the novelty:
-classical control written out from the formulae instead of assembled from toolbox calls.
-
-| Repository | Description | Stack |
-| :--- | :--- | :--- |
-| **[Rocket state-space control](https://github.com/hmon91/rocket-state-space-control)** | Full state-space study of a sounding rocket in first-stage ascent: trajectory linearisation, controllability and observability, Lyapunov and BIBO stability, pole placement, static and integral tracking, full and reduced-order observers. Runs with no Control System Toolbox, so Bass-Gura, Ackermann and the Kronecker Lyapunov solve are all written directly. *(Sharif University of Technology, Advanced Automatic Control)* | `MATLAB` |
-
----
-
 ### Toolbox
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat&logo=mathworks&logoColor=white)](#)
