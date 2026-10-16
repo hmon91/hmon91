@@ -66,7 +66,7 @@ Give it a plant `x' = A x + B u`, `y = C x` and the trained network `u = pi(y)` 
 
 - A **global** test for every starting state `x0 >= 0` *(L-CSS 2024)*, and if it fails, the largest certified **region of attraction** around 0 *(CDC 2025)*
 - A guaranteed decay rate in the region, and a simulator to test the result
-- For positive loops: `B >= 0`, `C >= 0` and `pi(0) = 0` (for example, a network without biases)
+- For positive loops: `B >= 0`, `C >= 0` and `pi(0) = 0` (for example, a network without biases with tanh, ReLU or leaky ReLU activations)
 - Reads PyTorch models; the same functions in Python and MATLAB (the MATLAB version also runs in GNU Octave)
 
 ```bash
