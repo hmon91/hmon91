@@ -114,7 +114,7 @@ research program: from global stability outward to local, robust, and delay-tole
 | **[Global stability of NN-controlled systems](https://github.com/hmon91/Global-stability-of-NN-controlled-systems)** | Closed-form sector bound + Metzler/Hurwitz test for global exponential stability, with an IQC run-time baseline. *(L-CSS 2024)* | `MATLAB` `Python` |
 | **[Local stability of NN-controlled systems](https://github.com/hmon91/Local-stability-of-NN-controlled-systems)** | Localized Aizerman conditions and layer-wise linear relaxations for region-of-attraction estimation. *(CDC 2025)* | `Jupyter` |
 | **[Robustness of NN-controlled systems](https://github.com/hmon91/Robustness-of-NN-controlled-systems)** | Closed-form stability radius for positive Lur'e systems under structured uncertainty, plus sector-bound refinement. *(CCTA 2025)* | `MATLAB` |
-| **[Delay-independent safety of NN controllers](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)** | Certificates holding across state/input delays and interval-matrix uncertainty. *(ACC 2026, submitted)* | `MATLAB` |
+| **[Delay-independent safety of NN controllers](https://github.com/hmon91/Delay-independant-safety-of-NN-controllers)** | Certificates holding across state/input delays and interval-matrix uncertainty. *(ACC 2026)* | `MATLAB` |
 | **[PSGModel](https://github.com/hmon91/PSGModel)** | Predator–Swarm–Guide dynamics for crowd modeling and guidance. *(ACC 2024)* | `MATLAB` |
 
 ---
