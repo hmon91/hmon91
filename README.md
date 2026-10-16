@@ -39,7 +39,9 @@ Always glad to talk about safe learning-based control, positive systems, or pote
 
 ### Software
 
-**[nnsector](https://github.com/hmon91/nnsector)**: sector bounds for feedforward neural networks, in Python and MATLAB.
+Two open-source libraries, in Python and MATLAB, for certifying feedback loops that contain a neural network. **nnsector** bounds the network, and **nnstab** uses those bounds to check that the closed loop is stable.
+
+#### [nnsector](https://github.com/hmon91/nnsector): sector bounds for feedforward neural networks
 
 [![tests](https://github.com/hmon91/nnsector/actions/workflows/tests.yml/badge.svg)](https://github.com/hmon91/nnsector/actions/workflows/tests.yml)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white)](https://github.com/hmon91/nnsector)
@@ -53,16 +55,36 @@ Give it a trained network, a point `y*` and a box around it. It returns two slop
 - Reads PyTorch `nn.Sequential` models
 - The same functions in Python and MATLAB (the MATLAB version also runs in GNU Octave)
 
+#### [nnstab](https://github.com/hmon91/nnstab): stability checks for feedback loops with a neural network controller
+
+[![tests](https://github.com/hmon91/nnstab/actions/workflows/tests.yml/badge.svg)](https://github.com/hmon91/nnstab/actions/workflows/tests.yml)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white)](https://github.com/hmon91/nnstab)
+[![MATLAB R2016b+](https://img.shields.io/badge/MATLAB-R2016b%2B-0076A8?style=flat&logo=mathworks&logoColor=white)](https://github.com/hmon91/nnstab/tree/main/matlab)
+[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-blue?style=flat)](https://github.com/hmon91/nnstab/blob/main/LICENSE)
+
+Give it a plant `x' = A x + B u`, `y = C x` and the trained network `u = pi(y)` that closes the loop. It checks whether the loop is exponentially stable, using the positive Aizerman conditions on the sector bounds from nnsector: `A + B gamma1 C` must be Metzler and `A + B gamma2 C` must be Hurwitz. No SDP solver is needed.
+
+- A **global** test for every starting state `x0 >= 0` *(L-CSS 2024)*, and if it fails, the largest certified **region of attraction** around 0 *(CDC 2025)*
+- A guaranteed decay rate in the region, and a simulator to test the result
+- For positive loops: `B >= 0`, `C >= 0` and `pi(0) = 0` (for example, a network without biases with tanh, ReLU or leaky ReLU activations)
+- Reads PyTorch models; the same functions in Python and MATLAB (the MATLAB version also runs in GNU Octave)
+
 ```bash
-pip install git+https://github.com/hmon91/nnsector.git
+pip install git+https://github.com/hmon91/nnsector.git   # sector bounds only
+pip install git+https://github.com/hmon91/nnstab.git     # stability checks (also installs nnsector)
 ```
 
 ```python
 import nnsector as ns
+import nnstab as nst
 
-net = ns.demo_network()            # small tanh network that ships with the package
-sb = ns.local_bound(net, -1, 1)    # box [-1, 1] around y* = 0
-print(sb.gamma1, sb.gamma2)        # about -2.786 and -1.200
+net = ns.demo_network()                      # small tanh network that ships with nnsector
+sb = ns.local_bound(net, -1, 1)              # box [-1, 1] around y* = 0
+print(sb.gamma1, sb.gamma2)                  # about -2.786 and -1.200
+
+A, B, C, net = nst.example_system("local")   # an unstable plant with a NN controller
+res = nst.verify(A, B, C, net)               # global test, then a region of attraction
+print(res.status)                            # 'local': every x0 >= 0 with sum(x0) <= 1.706 goes to 0
 ```
 
 ---
@@ -74,7 +96,7 @@ print(sb.gamma1, sb.gamma2)        # about -2.786 and -1.200
 - **Ensuring Both Positivity and Stability Using Sector-Bounded Nonlinearity for Systems with Neural Network Controllers**
   H. Montazeri Hedesh, M. Siami
   *IEEE Control Systems Letters (L-CSS)*, vol. 8, pp. 1685–1690, 2024
-  [IEEE Xplore](https://ieeexplore.ieee.org/document/10561541) · [arXiv:2406.12744](https://arxiv.org/abs/2406.12744) · [code](https://github.com/hmon91/Global-stability-of-NN-controlled-systems) · [library](https://github.com/hmon91/nnsector)
+  [IEEE Xplore](https://ieeexplore.ieee.org/document/10561541) · [arXiv:2406.12744](https://arxiv.org/abs/2406.12744) · [code](https://github.com/hmon91/Global-stability-of-NN-controlled-systems) · libraries: [nnsector](https://github.com/hmon91/nnsector), [nnstab](https://github.com/hmon91/nnstab)
 
 **Conference**
 
@@ -91,7 +113,7 @@ print(sb.gamma1, sb.gamma2)        # about -2.786 and -1.200
 - **Local Stability and Region of Attraction Analysis for Neural Network Feedback Systems under Positivity Constraints**
   H. Montazeri Hedesh, M. K. Wafi, M. Siami
   *64th IEEE Conference on Decision and Control (CDC)*, Rio de Janeiro, Brazil, 2025
-  [IEEE Xplore](https://ieeexplore.ieee.org/document/11312171) · [arXiv:2505.22889](https://arxiv.org/abs/2505.22889) · [code](https://github.com/hmon91/Local-stability-of-NN-controlled-systems) · [library](https://github.com/hmon91/nnsector)
+  [IEEE Xplore](https://ieeexplore.ieee.org/document/11312171) · [arXiv:2505.22889](https://arxiv.org/abs/2505.22889) · [code](https://github.com/hmon91/Local-stability-of-NN-controlled-systems) · libraries: [nnsector](https://github.com/hmon91/nnsector), [nnstab](https://github.com/hmon91/nnstab)
   <!-- TODO: add page range once you have it from Xplore -->
 
 - **Predator-Swarm-Guide Dynamics: A Hybrid Approach to Crowd Modeling and Guidance in Mass Shooting Scenarios**
