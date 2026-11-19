@@ -112,15 +112,13 @@ print(res.status)                            # 'local': every x0 >= 0 with sum(x
 
 - **Local Stability and Region of Attraction Analysis for Neural Network Feedback Systems under Positivity Constraints**
   H. Montazeri Hedesh, M. K. Wafi, M. Siami
-  *64th IEEE Conference on Decision and Control (CDC)*, Rio de Janeiro, Brazil, 2025
+  *64th IEEE Conference on Decision and Control (CDC)*, Rio de Janeiro, Brazil, 2025, pp. 1142-1149
   [IEEE Xplore](https://ieeexplore.ieee.org/document/11312171) · [arXiv:2505.22889](https://arxiv.org/abs/2505.22889) · [code](https://github.com/hmon91/Local-stability-of-NN-controlled-systems) · libraries: [nnsector](https://github.com/hmon91/nnsector), [nnstab](https://github.com/hmon91/nnstab)
-  <!-- TODO: add page range once you have it from Xplore -->
 
 - **Predator-Swarm-Guide Dynamics: A Hybrid Approach to Crowd Modeling and Guidance in Mass Shooting Scenarios**
   A. Darabi, H. Montazeri Hedesh, M. Siami, M. Sznaier
   *American Control Conference (ACC)*, Toronto, ON, Canada, 2024, pp. 4402–4408
-  [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10645036) 
-  [code](https://github.com/hmon91/PSGModel)
+  [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10645036) · [code](https://github.com/hmon91/PSGModel)
 
 <sub>Full, up-to-date list on my <a href="https://scholar.google.com/citations?user=5k1HFTkAAAAJ&hl=en">Google Scholar</a>.</sub>
 
